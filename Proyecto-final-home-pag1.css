@@ -5,13 +5,28 @@ nav {
   margin-top: -8px;
 }
 img.class-logo {
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 130px;
+  overflow: hidden;
+  float: left;
+
 }
 nav div {
   float: left;
-  width: 13%;
+  width: 12%;
+  overflow: hidden;
+  margin-top: 40px;
 }
+
+
+nav div.buscador {
+
+  float:right;
+  width: 6%;
+  overflow:hidden;
+  margin-top: 78px;
+  }
+
 
 nav div a {
   color: gold;
