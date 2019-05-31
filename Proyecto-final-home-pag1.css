@@ -23,21 +23,18 @@ div.texto {
 footer {
   overflow: hidden;
   background-color: black;
-  position: absolute;
-  top: 100%;
+
 }
 img.class-TMDB {
   width: 100px;
 }
 footer div {
   float: left;
-  width: 25%;
+  width: 30%;
   color: gold;
   position: relative;
 }
-div.participantes {
-  background-color: black;
-}
+
 div.container {
 
 }
