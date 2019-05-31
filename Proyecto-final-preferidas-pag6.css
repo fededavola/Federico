@@ -1,0 +1,40 @@
+/* header y footer comienzo */
+nav {
+  overflow: hidden;
+  background-color: black;
+  margin-top: -8px;
+}
+img.class-logo {
+  width: 150px;
+  height: 100px;
+}
+nav div {
+  float: left;
+  width: 13%;
+}
+nav div a {
+  color: gold;
+  text-decoration: none;
+}
+div.texto {
+  padding-top: 40px;
+}
+footer {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+}
+img.class-TMDB {
+  width: 100px;
+}
+footer div {
+  float: left;
+  width: 13%;
+  color: gold;
+  position: relative;
+}
+div.container {
+
+}
+/* header y footer fin */

@@ -1,0 +1,89 @@
+/* header y footer comienzo */
+nav {
+  overflow: hidden;
+  background-color: black;
+  margin-top: -8px;
+}
+img.class-logo {
+  width: 150px;
+  height: 100px;
+}
+nav div {
+  float: left;
+  width: 13%;
+}
+
+nav div a {
+  color: gold;
+  text-decoration: none;
+}
+div.texto {
+  padding-top: 40px;
+}
+footer {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+}
+img.class-TMDB {
+  width: 100px;
+}
+footer div {
+  float: left;
+  width: 25%;
+  color: gold;
+  position: relative;
+}
+div.participantes {
+  background-color: black;
+}
+div.container {
+
+}
+/* header y footer fin */
+
+section.pelis-populares {
+  overflow: hidden;
+}
+
+div.titulo-pelis-populares {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div.pelis-popular {
+  float: left;
+  width: 20%;
+}
+
+section.mejor-puntaje {
+  overflow: hidden;
+}
+
+div.titulo-mayor-puntaje {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div.pelis-mayor-puntaje {
+  float: left;
+  width: 20%;
+}
+
+section.proximos-estrenos {
+  overflow: hidden;
+}
+
+div.titulo-proximos-estrenos {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div.pelis-proximos-estrenos {
+  float: left;
+  width: 20%;
+}
