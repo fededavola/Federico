@@ -4,18 +4,7 @@ nav {
   background-color: black;
   margin-top: -8px;
 }
-img.class-logo {
-  width: 200px;
-  height: 130px;
-  overflow: hidden;
-  float: left;
 
-}
-nav div {
-  float: left;
-  width: 12%;
-  overflow: hidden;
-  margin-top: 40px;
 }
 
 
@@ -57,6 +46,7 @@ div.container {
 
 section.pelis-populares {
   overflow: hidden;
+  width: 100%;
 }
 
 div.titulo-pelis-populares {
@@ -68,6 +58,11 @@ div.titulo-pelis-populares {
 div.pelis-popular {
   float: left;
   width: 25%;
+
+}
+
+div.pelis-popular img{
+  width: 100%
 }
 
 section.mejor-puntaje {
@@ -12396,4 +12391,137 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid;
   }
+}
+
+ /*sidenav*/
+ .header{
+   width: 100%;
+   height: 118px;
+   background-position x: center;
+   background-position y: center;
+   background-size: initial;
+   background-repeat x: repeat;
+   background-repeat y: no repeat;
+   background-origin: initial;
+   background-clip: initial;
+   background-color: #0d0d0e;
+   position: relative;
+ }
+ .inner_box{
+position: relative;
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+height: 118px;
+
+ }
+ .nav_link{
+   display: inline-block;
+   font-size: 14px;
+   padding-left: 30px;
+   line-height: 14px;
+   text-decoration: none;
+   color: #758785;
+   outline: none;
+   background-image: url();
+
+ }
+ .nav_link_box{
+   position: absolute;
+   top: 40px;
+   left: 0px;
+ }
+
+.nav_box{
+  display: none;
+  position:absolute;
+  z-index: 999;
+  left: 0;
+  top: 110px;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 30px;
+  background: #0d0d0e;
+  margin: 0;
+  padding: 0;
+}
+.icon_box{
+  line-height:30px;
+  font-size:14px;
+  position:absolute;
+  right:0;
+  top:35px;
+  color:#758785;
+}
+.icon_box a{
+  margin-left:8px;
+}
+.icon_box img{
+  vertical-align:middle;
+  line-height:30px;
+}
+
+
+
+.menu{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.manu-header-menu-container{
+  display: block;
+}
+
+.nav_box li{
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+.nav_box li a{
+  color: #9e9e9e;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.close_nav{
+  position:absolute;
+  right:20px;
+  top:3px;
+  display:block;
+  text-decoration:none;
+  padding-left:25px;
+  font-size:13px;
+  font-family:'ProximaNova-Bold';
+  letter-spacing:1px;
+  color:#9e9e9e;
+  line-height:14px;
+  }
+
+.buscador{
+line-height: 30px;
+font-size: 14px;
+position: absolute;
+right: 0;
+top: 35px;
+color: #758785;
+padding-right: 25px;
+}
+
+.search{
+background-color: #0000;
+border-style: solid;
+border-color: goldenrod;
+border-radius: 10px;
+color: white;
 }
