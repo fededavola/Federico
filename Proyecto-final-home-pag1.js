@@ -9,7 +9,7 @@ window.onload = function(){
     })
     .then(function(informacion) {
       console.log(informacion);
-      for (var i = 0; i < 4; i++) {
+      for (var i = 0; i < informacion.results.length; i++) {
         // informacion[i]
         console.log(informacion.results[i]);
 
@@ -20,7 +20,7 @@ window.onload = function(){
   console.log(image);
 
   var listadoPopulares = document.querySelector(".listado-pelis-populares")
-    listadoPopulares.innerHTML += '<div class="pelis-popular"><p>'+ titulo +'</p><img src="'+ image +'" alt=""></div>'
+    listadoPopulares.innerHTML += '<li><p>'+ titulo +'</p><img src="'+ image +'" alt=""></li>'
       }
 
     })
@@ -35,7 +35,7 @@ fetch(puntuadasUrl)
   })
   .then(function(informacion) {
     console.log(informacion);
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < informacion.results.length; i++) {
        //informacion[i]
     console.log(informacion.results[i]);
 
@@ -46,7 +46,7 @@ var image = posterUrl + poster
 console.log(image);
 
  var listadoPuntuadas = document.querySelector(".listado-pelis-puntuadas")
-   listadoPuntuadas.innerHTML += '<div class="pelis-mayor-puntaje"><p>'+ titulo +'</p><img src="'+ image +'" alt=""></div>'
+   listadoPuntuadas.innerHTML += '<li><p>'+ titulo +'</p><img src="'+ image +'" alt=""></li>'
     }
 
   })
@@ -61,7 +61,7 @@ console.log(image);
     })
     .then(function(informacion) {
       console.log(informacion);
-      for (var i = 0; i < 4; i++) {
+      for (var i = 0; i < informacion.results.length; i++) {
          //informacion[i]
       console.log(informacion.results[i]);
 
@@ -72,7 +72,7 @@ console.log(image);
   console.log(image);
 
    var listadoEstrenos = document.querySelector(".listado-proximos-estremos")
-     listadoEstrenos.innerHTML += '<div class="pelis-proximos-estrenos"><p>'+ titulo +'</p><img src="'+ image +'" alt=""></div>'
+     listadoEstrenos.innerHTML += '<li><p>'+ titulo +'</p><img src="'+ image +'" alt=""></li>'
       }
 
     })
