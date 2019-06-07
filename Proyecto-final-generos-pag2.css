@@ -38,13 +38,17 @@ div.container {
 /* header y footer fin */
 ul li {
   list-style-type: none;
-  margin-bottom: 7px;
+  margin-bottom: 20px;
 }
 a {
   color: gold;
   text-decoration: none;
   border-radius: 1px;
   background-color: black;
-  border-radius: 25px;
-  padding: 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+ul {
+  text-align: center;
 }
