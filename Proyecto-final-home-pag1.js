@@ -71,7 +71,7 @@ console.log(image);
   var image = posterUrl + poster
   console.log(image);
 
-   var listadoEstrenos = document.querySelector(".listado-proximos-estremos")
+   var listadoEstrenos = document.querySelector(".listado-proximos-estrenos")
      listadoEstrenos.innerHTML += '<li><p>'+ titulo +'</p><img src="'+ image +'" alt=""></li>'
       }
 
