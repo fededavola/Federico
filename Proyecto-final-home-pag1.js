@@ -9,18 +9,23 @@ window.onload = function(){
     })
     .then(function(informacion) {
       console.log(informacion);
+      var titulo
+      var poster
+      var posterUrl
+      var image
+      var id
       for (var i = 0; i < informacion.results.length; i++) {
         // informacion[i]
         console.log(informacion.results[i]);
+        id = informacion.results[i].id
+        titulo = informacion.results[i].title
+        poster = informacion.results[i].poster_path
+        posterUrl= 'https://image.tmdb.org/t/p/original/'
+        image = posterUrl + poster
+        console.log(image);
 
-  var titulo = informacion.results[i].title
-  var poster = informacion.results[i].poster_path
-  var posterUrl= 'https://image.tmdb.org/t/p/original/'
-  var image = posterUrl + poster
-  console.log(image);
-
-  var listadoPopulares = document.querySelector(".listado-pelis-populares")
-    listadoPopulares.innerHTML += '<li><p>'+ titulo +'</p><img src="'+ image +'" alt=""></li>'
+        var listadoPopulares = document.querySelector(".listado-pelis-populares")
+        listadoPopulares.innerHTML += "<li><a href='Proyecto-final-detalle-peli-pag5.html?idDePelicula="+ id +"'><p>"+ titulo +'</p><img src="'+ image +'" alt=""></a></li>'
       }
 
     })
@@ -35,14 +40,18 @@ fetch(puntuadasUrl)
   })
   .then(function(informacion) {
     console.log(informacion);
+    var titulo
+    var poster
+    var posterUrl
+    var image
     for (var i = 0; i < informacion.results.length; i++) {
        //informacion[i]
     console.log(informacion.results[i]);
 
-var titulo = informacion.results[i].title
-var poster = informacion.results[i].poster_path
-var posterUrl= 'https://image.tmdb.org/t/p/original/'
-var image = posterUrl + poster
+    titulo = informacion.results[i].title
+    poster = informacion.results[i].poster_path
+    posterUrl= 'https://image.tmdb.org/t/p/original/'
+    image = posterUrl + poster
 console.log(image);
 
  var listadoPuntuadas = document.querySelector(".listado-pelis-puntuadas")
