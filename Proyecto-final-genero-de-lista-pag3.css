@@ -1,40 +1,41 @@
 /* header y footer comienzo */
-nav {
-  overflow: hidden;
-  background-color: black;
-  margin-top: -8px;
+.uk-navbar-container{
+  display: flex;
+  position: relative;
 }
-img.class-logo {
-  width: 150px;
-  height: 100px;
+div.uk-navbar-right{
+  position: relative;
+  bottom: 6px;
 }
-nav div {
-  float: left;
-  width: 13%;
+input.uk-search-input{
+  border-radius: 23px;
 }
-nav div a {
-  color: gold;
-  text-decoration: none;
-}
-div.texto {
-  padding-top: 40px;
-}
+
 footer {
   overflow: hidden;
   background-color: black;
-  
+  position: absolute;
+  width: 100%;
+
 }
 img.class-TMDB {
   width: 100px;
+  float: left;
+  position: relative;
+  bottom: 30px;
 }
 footer div {
   float: left;
   width: 30%;
   color: gold;
   position: relative;
+  top: 30px;
+  text-align: center;
 }
-div.container {
-
+}
+div.search {
+  float: right;
+  margin-top: 11px;
 }
 /* header y footer fin */
 section.pelis-populares-del-genero {

@@ -1,25 +1,46 @@
 /* header y footer comienzo */
 
+div.uk-navbar-right{
+  position: relative;
+  bottom: 6px;
+}
+input.uk-search-input{
+  border-radius: 23px;
+}
+div.search {
+  float: right;
+  margin-top: 11px;
+}
 
 footer {
   overflow: hidden;
   background-color: black;
+  position: absolute;
+  width: 100%;
 
 }
 img.class-TMDB {
   width: 100px;
+  float: left;
+  position: relative;
+  bottom: 30px;
 }
 footer div {
   float: left;
   width: 30%;
   color: gold;
   position: relative;
+  top: 30px;
+  text-align: center;
 }
-div.search {
-  float: right;
-  margin-top: 11px;
 }
 /* header y footer fin */
+
+/*body comienzo*/
+body{
+  background-color: #141414;
+}
+/*body fin*/
 
 section.pelis-populares {
   overflow: hidden;
@@ -75,17 +96,3 @@ div.pelis-mayor-puntaje img {
 div.pelis-proximos-estrenos img {
   width: 100%;
 }
-div.uk-navbar-right{
-  position: relative;
-  bottom: 6px;
-}
-input.uk-search-input{
-border-radius: 23px;
-}
-
- /*sidenav*/
-
- /*body*/
- body{
-   background-color: #141414;
- }

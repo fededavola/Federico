@@ -2,45 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>The Movie DB</title>
+    <link rel="shortcut icon" href="C:\Users\santi\OneDrive\Documents\GitHub\Federico\descarga.png">
     <link rel="stylesheet" href="Proyecto-final-generos-pag2.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+
   </head>
 
 
   </script>
   <body>
-      <!-- header comienzo-->
-    <header>
-      <nav>
-        <div class="logo">
-          <img class="class-logo" src="https://codemyviews-blog-post-images.s3.amazonaws.com/uploads/wp-contentuploads46-cleverLogos-1.jpg" alt="">
+        <!--header comienzo-->
+        <div class="container-1">
+        <header>
+          <nav>
+            <div class="header">
+              <nav class="uk-navbar-container" uk-navbar="boundary-align: true; align: center;">
+        <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Peliculas Favoritas</a>
+                </li>
+                <li>
+                    <a href="#">Genero</a>
+                </li>
+            </ul>
+
         </div>
-        <div class="texto">
-          <a href="#">Inicio</a>
+
+          <div class="uk-navbar-right">
+            <div class="search">
+              <form class="uk-search uk-search-default">
+                <input class="uk-search-input" type="search" placeholder="Search...">
+              </form>
+              </div>
         </div>
-        <div class="texto">
-          <a href="#">Mejores puntuadas</a>
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Iniciar Sesion</a>
+                </li>
+            </ul>
         </div>
-        <div class="texto">
-          <a href="#">Estrenos</a>
-        </div>
-        <div class="texto">
-          <a href="#">Generos</a>
-        </div>
-        <div class="buscador texto">
-          <a href="#">Buscador</a>
-        </div>
-        <div class="login texto">
-          <a href="#">Login</a>
-        </div>
-      </nav>
+    </nav>
+          </nav>
+      </div>
     </header>
-    <!-- header fin -->
+        <!--header fin-->
+
     <div class="container-2">
-      <ul class="listado-generos">
-
-
-      </ul>
+      <ul class="listado-generos"></ul>
     </div>
     <!-- footer comienza -->
     <footer>
@@ -48,11 +62,13 @@
         <img class="class-TMDB" src="https://www.themoviedb.org/assets/2/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" alt="">
       </div>
       <div class="participantes">
-          Federico Davola,Bruno Grottesi,Santiago Sanchez
+          Federico Davola. Bruno Grottesi. Santiago Sanchez.
       </div>
     </footer>
-    <!-- footer fin -->
+  <!-- footer fin -->
   </body>
   <script type="text/javascript" src="Proyecto-final-generos-pag2.js">
+  <script src="js/uikit.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="menu-header.js"> </script>
   </script>
 </html>

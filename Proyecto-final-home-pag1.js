@@ -88,15 +88,4 @@ console.log(image);
     .catch(function(error) {
       console.log("Error: " + error);
     })
-    function nav_box(){
-      document.getElementById('menu-header-menu').classList.nav_box('active');
     }
-    function go(){
-    if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){
-            document.form.submit();
-        }
-        else{
-             alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
-        }
-}
-}
