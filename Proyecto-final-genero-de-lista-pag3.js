@@ -4,6 +4,7 @@ var apiKey = "887f975aad1edef3410134273e134d4f"
 
   var urlParams = new URLSearchParams(window.location.search);
   var query = urlParams.get('idDeGenero');
+  var genero =urlParams.get('genero')
 
   var peliculaPorGeneroUrl = ("https://api.themoviedb.org/3/discover/movie?api_key="+ apiKey +"&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_genres=" +query)
 
@@ -27,7 +28,7 @@ var apiKey = "887f975aad1edef3410134273e134d4f"
         //     <div class="uk-position-center uk-panel"><h1>1</h1></div>
         // </li>
 
-        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><h2>"+genero+"</h2><p class=''>"+ titulo +"</p><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
       }
     })
     .catch(function(error){

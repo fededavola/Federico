@@ -14,7 +14,8 @@ window.onload = function(){
       for (var i = 0; i < arrayGeneros.length; i++) {
         var id= arrayGeneros[i].id
         var generos= arrayGeneros[i].name
-        document.querySelector(".listado-generos").innerHTML += "<li> <a href='Proyecto-final-genero-de-lista-pag3.html?idDeGenero=" + id + "'>" + generos + "</a></li>"
+
+        document.querySelector(".listado-generos").innerHTML += "<li> <a href='Proyecto-final-genero-de-lista-pag3.html?idDeGenero=" + id + "&genero="+generos+"'>" + generos + "</a></li>"
       }
     })
     .catch(function(error){

@@ -5,7 +5,6 @@ var urlParams = new URLSearchParams(window.location.search);
 var id = urlParams.get('idDePelicula');
 
 var url = "https://api.themoviedb.org/3/movie/"+ id +"?api_key=" + apiKey+ "&language=en-US"
-
 fetch(url)
   .then(function(respuesta) {
     return respuesta.json()
@@ -78,4 +77,35 @@ fetch(url)
   .catch(function(error) {
     console.log("Error: " + error);
   })
+var urlRecomendados = "https://api.themoviedb.org/3/movie/"+ id +"/recommendations?api_key="+ apiKey +"&page=1"
+fetch(urlRecomendados)
+  .then(function(respuesta) {
+    return respuesta.json()
+  })
+  .then(function(informacion) {
+    console.log(informacion);
+    var titulo
+    var poster
+    var posterUrl
+    var image
+    var id
+    for (var i = 0; i < informacion.results.length; i++) {
+       //informacion[i]
+    console.log(informacion.results[i]);
+    id = informacion.results[i].id
+    titulo = informacion.results[i].title
+    poster = informacion.results[i].poster_path
+    posterUrl= 'https://image.tmdb.org/t/p/original/'
+    image = posterUrl + poster
+console.log(image);
+
+ var listadoPeliculasRecomendadas = document.querySelector(".listado-peliculas-recomendadas")
+   listadoPeliculasRecomendadas.innerHTML += "<section class='container-peliculas-recomendadas'><li><a href='Proyecto-final-detalle-peli-pag5.html?idDePelicula="+ id +"'><p class='titulo-pelis-home'>"+ titulo +'</p><img src="'+ image +'" alt=""></a></li></section>'
+    }
+
+  })
+  .catch(function(error) {
+    console.log("Error: " + error);
+  })
+  }
 }
