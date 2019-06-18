@@ -58,3 +58,21 @@ div.recomendaciones {
   font-weight: bold;
   text-decoration: underline;
 }
+li.container-detallesDePelicula {
+  overflow: hidden;
+}
+div.left-container-detallesDePelicula {
+  float: left;
+  width: 30%;
+}
+div.right-container-detallesDePelicula {
+  float: left;
+  width: 50%;
+  margin-left: 15px;
+}
+#lista-pelicula-detalles {
+  padding-left: 10px;
+}
+div h5 {
+  line-height: 0.8;
+}

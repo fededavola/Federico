@@ -37,7 +37,7 @@ fetch(url)
       releaseDate = informacion.release_date
       trailer = informacion.video
       if (trailer==false) {
-        trailer
+        //trailer == src=http://encinart.org/wp-content/uploads/2017/01/Video-no.jpg
       }
 
       // console.log(image);
@@ -48,7 +48,7 @@ fetch(url)
         }
         console.log(parrafoGeneros);
       var detallesDePelicula = document.querySelector("#lista-pelicula-detalles")
-      detallesDePelicula.innerHTML += "<li><div class='titulo-de-pelicula detalle-en-texto'>Titulo de la Pelicula: "+titulo+"</div><div class='genero-de-peli detalle-en-texto'><h3>"+parrafoGeneros+"</h3></div><div class='lenguaje-original detalle-en-texto'>Lenguaje de la pelicula: "+ language +"</div><div class='sinopsis detalle-en-texto'><p>Sinopsis: "+ sinopsis +"</p></div><div class='fecha-de-estreno detalle-en-texto'>Fecha de estreno: "+ releaseDate +"</div><div class='poster-de-peli '><img src='"+ image +"' alt=''></div><div class='trailer-de-peli'><video src='"+ trailer +"' autoplay poster=''></video></div></li>"
+      detallesDePelicula.innerHTML += "<li class='container-detallesDePelicula'><div class='left-container-detallesDePelicula'><div class='poster-de-peli '><img src='"+ image +"' alt=''></div></div><div class='right-container-detallesDePelicula'><div class='titulo-de-pelicula detalle-en-texto'><h2>"+titulo+"</h2></div><div class='sinopsis detalle-en-texto'><p>Sinopsis: "+ sinopsis +"</p></div><div class='genero-de-peli detalle-en-texto'><h5>Generos:"+parrafoGeneros+"</h5></div><div class='lenguaje-original detalle-en-texto'><h5>Lenguaje de la pelicula: "+ language +"</h5></div><div class='fecha-de-estreno detalle-en-texto'><h5>Fecha de estreno: "+ releaseDate +"</h5></div><div class='trailer-de-peli'><video src='"+ trailer +"' autoplay poster=''></video></div></div></li>"
       // <!-- <div class="titulo-de-pelicula detalle-en-texto">
       //   Titulo de Pelicula:
       // </div>
