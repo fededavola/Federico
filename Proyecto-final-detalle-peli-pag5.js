@@ -108,4 +108,3 @@ console.log(image);
     console.log("Error: " + error);
   })
   }
-}
