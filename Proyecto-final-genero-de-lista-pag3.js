@@ -5,7 +5,7 @@ var apiKey = "887f975aad1edef3410134273e134d4f"
   var urlParams = new URLSearchParams(window.location.search);
   var query = urlParams.get('idDeGenero');
 
-  var peliculaPorGeneroUrl = "https://api.themoviedb.org/3/discover/movie?api_key="+ apiKey +"&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_genres="+query
+  var peliculaPorGeneroUrl = ("https://api.themoviedb.org/3/discover/movie?api_key="+ apiKey +"&sort_by=popularity.desc&include_adult=true&include_video=true&page=1&with_genres=" +query)
 
   fetch(peliculaPorGeneroUrl)
     .then(function(respuesta) {
