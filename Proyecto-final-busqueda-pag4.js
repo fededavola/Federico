@@ -11,7 +11,7 @@ fetch(url)
   })
   .then(function(informacion){
     console.log(informacion);
-    var arrayBuscador = informacion.resultss
+    var arrayBuscador = informacion.results
     for (var i = 0; i < informacion.results.length; i++) {
       // informacion[i]
       console.log(informacion.results[i]);

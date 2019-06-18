@@ -1,6 +1,6 @@
 window.onload = function(){
 var apiKey = "887f975aad1edef3410134273e134d4f"
-
+var arrayDePelisFavoritas
 var urlParams = new URLSearchParams(window.location.search);
 var id = urlParams.get('idDePelicula');
 
@@ -107,4 +107,29 @@ console.log(image);
   .catch(function(error) {
     console.log("Error: " + error);
   })
+var peliculaFavorita;
+peliculaFavorita= '<li>'
+peliculaFavorita= "<button onclick='agregarFavoritos("+id+")' class='estrella'> &#9733;</button>"
+peliculaFavorita= "<a href=""
+peliculaFavorita='<img src='+url +img+'>'
+peliculaFavorita='<div class="uk-position-center uk-panel"><h1>'+ titulo +'</h1></div>'
+peliculaFavorita='</li>'
+console.log(peliculaFavorita);
+
+function agregarFavoritos(){
+  alert("me clickearon!")
+
+  if (arrayDePelisFavoritas.indexOf(id)===-1) {
+    arrayDePelisFavoritas.push(id)
+    window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
+  } else {
+    arrayDePelisFavoritas.splice(arrayDePelisFavoritas.indexOf(id),1)
+    window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   }
+
+
+  console.log(id);
+  console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+
+}
+}
