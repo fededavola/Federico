@@ -38,7 +38,7 @@ footer div {
 
 /*body comienzo*/
 body{
-  background-color: #141414;
+  background-color: black;
 }
 /*body fin*/
 
@@ -47,7 +47,7 @@ section.pelis-populares {
 }
 
 div.titulo-pelis-populares {
-  color: #CECAFA;
+  color: springgreen;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -62,7 +62,7 @@ section.mejor-puntaje {
 }
 
 div.titulo-mayor-puntaje {
-  color: #CECAFA;
+  color: springgreen;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -77,7 +77,7 @@ section.proximos-estrenos {
 }
 
 div.titulo-proximos-estrenos {
- color: #CECAFA;
+ color: springgreen;
  font-weight: bold;
  text-decoration: underline;
 }
@@ -95,4 +95,7 @@ div.pelis-mayor-puntaje img {
 }
 div.pelis-proximos-estrenos img {
   width: 100%;
+}
+.titulo-pelis-home {
+  color: black;
 }
