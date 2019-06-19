@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load",function(){
 
 var apiKey = "887f975aad1edef3410134273e134d4f"
 
@@ -28,11 +28,11 @@ var apiKey = "887f975aad1edef3410134273e134d4f"
         //     <div class="uk-position-center uk-panel"><h1>1</h1></div>
         // </li>
 
-        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><h2>"+genero+"</h2><p class=''>"+ titulo +"</p><img src='https://image.tmdb.org/t/p/w500" + url + "' alt=''><div class='uk-position-center uk-panel'></h2></div></li>"
+        document.querySelector('ul.peliculasporgenero').innerHTML += "<li><h2>"+genero+"</h2><a href='Proyecto-final-detalle-peli-pag5.html?idDePelicula="+ id +"'><p class='titulo-pelis-home'>"+ titulo +'</p><img src="https://image.tmdb.org/t/p/original/'+ url +'" alt=""></a></li>'
       }
     })
     .catch(function(error){
       console.log("Error" + error);
     })
 
-}
+})

@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load",function(){
   var apiKey = "887f975aad1edef3410134273e134d4f"
   var popularUrl = " https://api.themoviedb.org/3/movie/popular?api_key=" + apiKey + "&page=1"
 
@@ -94,5 +94,7 @@ console.log(image);
     .catch(function(error) {
       console.log("Error: " + error);
     })
-    
-    }
+
+
+
+  })

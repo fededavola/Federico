@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
   var apiKey = "887f975aad1edef3410134273e134d4f"
-arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita")).length>0
+arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita")).length >0
 
 
   if (arrayDePelisFavoritas.length>0) {
@@ -27,5 +27,8 @@ arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita")).le
     })
     .catch(function(error) {
       console.log("Error: " + error);
-  }
+  })
+
+}
+}
 })
