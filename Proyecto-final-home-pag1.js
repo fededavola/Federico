@@ -94,4 +94,5 @@ console.log(image);
     .catch(function(error) {
       console.log("Error: " + error);
     })
+    
     }

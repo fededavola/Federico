@@ -110,7 +110,7 @@ console.log(image);
 var peliculaFavorita;
 peliculaFavorita= '<li>'
 peliculaFavorita= "<button onclick='agregarFavoritos("+id+")' class='estrella'> &#9733;</button>"
-peliculaFavorita= "<a href=""
+peliculaFavorita= "<a href=''"
 peliculaFavorita='<img src='+url +img+'>'
 peliculaFavorita='<div class="uk-position-center uk-panel"><h1>'+ titulo +'</h1></div>'
 peliculaFavorita='</li>'
