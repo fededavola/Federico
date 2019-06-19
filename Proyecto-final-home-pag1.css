@@ -1,3 +1,8 @@
+/*body comienzo*/
+body{
+  background-color: white;
+}
+
 /* header y footer comienzo */
 
 div.uk-navbar-right{
@@ -6,7 +11,22 @@ div.uk-navbar-right{
 }
 input.uk-search-input{
   border-radius: 23px;
+  position: relative;
+  right: 120px;
+  bottom: 10px;
+  width: 200px;
 }
+button{
+  position: relative;
+  left: 88px;
+  top: 20px;
+}
+ a.boton-login{
+   position: relative;
+   top: 22px;
+   border: none;
+ }
+
 div.search {
   float: right;
   margin-top: 11px;
@@ -36,11 +56,7 @@ footer div {
 }
 /* header y footer fin */
 
-/*body comienzo*/
-body{
-  background-color: black;
-}
-/*body fin*/
+
 
 section.pelis-populares {
   overflow: hidden;
@@ -98,4 +114,7 @@ div.pelis-proximos-estrenos img {
 }
 .titulo-pelis-home {
   color: black;
+}
+@media screen { max-width
+
 }

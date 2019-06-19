@@ -50,3 +50,10 @@ div.genero-buscado {
   font-weight: bold;
   text-decoration: underline;
 }
+p.titulo-pelis-home{
+  color: black;
+  height: 70px;
+}
+li.uk-active h2{
+  color: black;
+}
