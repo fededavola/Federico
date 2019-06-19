@@ -5,6 +5,8 @@ if (window.sessionStorage.getItem("nombre") != "" && window.sessionStorage.getIt
   // alert("Bienvenido: "+   window.sessionStorage.getItem("nombre"))
   // CAPTURO EL TEXTO DE LOGIN Y LO REEMPLAZO POR EL NOMBRE DEL USUARIO
   document.querySelector('a.boton-login ').innerHTML = window.sessionStorage.getItem("nombre")
+  var arrayDePelisFavoritas = []
+  console.log(arrayDePelisFavoritas);
 }
 
 
@@ -23,6 +25,7 @@ if (window.sessionStorage.getItem("nombre") != "" && window.sessionStorage.getIt
       console.log(gender);
       window.sessionStorage.setItem("gender",gender)
       window.sessionStorage.getItem("gender")
+
   })
 
 })

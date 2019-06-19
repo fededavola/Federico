@@ -1,6 +1,6 @@
-window.onload = function(){
+window.addEventListener("load", function(){
 var apiKey = "887f975aad1edef3410134273e134d4f"
-var arrayDePelisFavoritas
+
 var urlParams = new URLSearchParams(window.location.search);
 var id = urlParams.get('idDePelicula');
 
@@ -46,8 +46,40 @@ fetch(url)
         parrafoGeneros += "<a href='Proyecto-final-genero-de-lista-pag3.html?idGenero="+genres[i].id+"'>" + genres[i].name + "</a> "
         }
         console.log(parrafoGeneros);
-      var detallesDePelicula = document.querySelector("#lista-pelicula-detalles")
-      detallesDePelicula.innerHTML += "<li class='container-detallesDePelicula'><div class='left-container-detallesDePelicula'><div class='poster-de-peli '><img src='"+ image +"' alt=''></div></div><div class='right-container-detallesDePelicula'><div class='titulo-de-pelicula detalle-en-texto'><h2>"+titulo+"</h2></div><div class='sinopsis detalle-en-texto'><p>Sinopsis: "+ sinopsis +"</p></div><div class='genero-de-peli detalle-en-texto'><h5>Generos:"+parrafoGeneros+"</h5></div><div class='lenguaje-original detalle-en-texto'><h5>Lenguaje de la pelicula: "+ language +"</h5></div><div class='fecha-de-estreno detalle-en-texto'><h5>Fecha de estreno: "+ releaseDate +"</h5></div><div class='trailer-de-peli'><video src='"+ trailer +"' autoplay poster=''></video></div></div></li>"
+
+        var detallesDePelicula = document.querySelector("#lista-pelicula-detalles")
+        var peliculaFavorita;
+        peliculaFavorita= "<li class='container-detallesDePelicula'>"
+        peliculaFavorita+=  "<div class='left-container-detallesDePelicula'>"
+        peliculaFavorita+=    "<div class='poster-de-peli '>"
+        peliculaFavorita+=      "<img src='"+ image +"' alt=''>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=  "</div>"
+        peliculaFavorita+=  "<div class='right-container-detallesDePelicula'>"
+        peliculaFavorita+=    "<div class='titulo-de-pelicula detalle-en-texto'>"
+        peliculaFavorita+=      "<h2>"+titulo+"</h2>"
+        peliculaFavorita+=      "<button onclick='agregarFavoritos("+id+")' class='estrella'> &#9733;</button>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=    "<div class='sinopsis detalle-en-texto'>"
+        peliculaFavorita+=      "<p>Sinopsis: "+ sinopsis +"</p>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=    "<div class='genero-de-peli detalle-en-texto'>"
+        peliculaFavorita+=      "<h5>Generos:"+parrafoGeneros+"</h5>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=    "<div class='lenguaje-original detalle-en-texto'>"
+        peliculaFavorita+=      "<h5>Lenguaje de la pelicula: "+ language +"</h5>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=    "<div class='fecha-de-estreno detalle-en-texto'>"
+        peliculaFavorita+=      "<h5>Fecha de estreno: "+ releaseDate +"</h5>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=    "<div class='trailer-de-peli'>"
+        peliculaFavorita+=     "<video src='"+ trailer +"' autoplay poster=''></video>"
+        peliculaFavorita+=    "</div>"
+        peliculaFavorita+=  "</div>"
+        peliculaFavorita+= "</li>"
+
+        console.log(peliculaFavorita);
+        detallesDePelicula.innerHTML += peliculaFavorita
       // <!-- <div class="titulo-de-pelicula detalle-en-texto">
       //   Titulo de Pelicula:
       // </div>
@@ -107,29 +139,31 @@ console.log(image);
   .catch(function(error) {
     console.log("Error: " + error);
   })
-var peliculaFavorita;
-peliculaFavorita= '<li>'
-peliculaFavorita= "<button onclick='agregarFavoritos("+id+")' class='estrella'> &#9733;</button>"
-peliculaFavorita= "<a href=''"
-peliculaFavorita='<img src='+url +img+'>'
-peliculaFavorita='<div class="uk-position-center uk-panel"><h1>'+ titulo +'</h1></div>'
-peliculaFavorita='</li>'
-console.log(peliculaFavorita);
 
-function agregarFavoritos(){
+
+})
+
+
+//funcion para agregar a favoritos
+function agregarFavoritos(id){
   alert("me clickearon!")
+console.log("este es el id de la peli");
+  console.log(id);
 
-  if (arrayDePelisFavoritas.indexOf(id)===-1) {
+  var arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
+  console.log("este es el contenido del array en session");
+  console.log(arrayDePelisFavoritas);
+
+  // controlo si el ID de la peli clickeada esta como favorita
+  if (arrayDePelisFavoritas.indexOf(id)==-1) {
+    // la peli no esta, entonces la agrego
     arrayDePelisFavoritas.push(id)
     window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   } else {
+    // si esta la elimino
     arrayDePelisFavoritas.splice(arrayDePelisFavoritas.indexOf(id),1)
     window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   }
 
-
-  console.log(id);
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
-
-}
 }

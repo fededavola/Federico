@@ -1,9 +1,9 @@
 window.addEventListener("load", function(){
   var apiKey = "887f975aad1edef3410134273e134d4f"
-arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita")).length >0
+arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
 
 
-  if (arrayDePelisFavoritas.length>0) {
+  if (arrayDePelisFavoritas != null && arrayDePelisFavoritas.length>0) {
     for (var i = 0; i < arrayDePelisFavoritas.length; i++) {
 
 
@@ -13,9 +13,11 @@ arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita")).le
     .then(function(respuesta){
       return respuesta.json()
     })
-    .then(function(peliculas){
+    .then(function(pelicula){
       console.log(pelicula);
       var ul =document.querySelector("section ul")
+      console.log(111);
+      console.log(ul);
       var li;
       li ="<li>"
       li+="<h2>"+pelicula.title+"</h2>"
