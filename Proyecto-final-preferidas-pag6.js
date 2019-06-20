@@ -21,7 +21,7 @@ arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
       var li;
       li ="<li>"
       li+="<h2>"+pelicula.title+"</h2>"
-      li+="<a href=''></a>"
+      li+="<a href='Proyecto-final-detalle-peli-pag5.html?idDePelicula="+ pelicula.id+"'>"
       li+="<img src='"+urlImg+ pelicula.poster_path +"'>"
       li+="</a>"
       li+="</li>"
