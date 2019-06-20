@@ -4,7 +4,10 @@ body{
 }
 
 /* header y footer comienzo */
-
+.nav-item{
+  position: relative;
+  left: 60px;
+}
 div.uk-navbar-right{
   position: relative;
   bottom: 6px;
@@ -27,7 +30,13 @@ button{
    top: 22px;
    border: none;
  }
-
+ img.class-TMDB-nav{
+   position: relative;
+   top: 32px;
+   left: 35px;
+   margin: -28px;
+   height: 75px;
+ }
 
 footer {
   overflow: hidden;

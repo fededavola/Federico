@@ -1,4 +1,8 @@
 /* header y footer comienzo */
+.nav-item{
+  position: relative;
+  left: 60px;
+}
 div.uk-navbar-right{
   position: relative;
   bottom: 6px;
@@ -14,7 +18,7 @@ button{
   position: relative;
   left: 88px;
   top: 20px;
-  cursor: pointer; 
+  cursor: pointer;
 }
  a.boton-login{
    position: relative;
@@ -49,3 +53,7 @@ footer div {
   text-align: center;
 }
 /* header y footer fin */
+
+p.titulo-pelis-home{
+  color: black;
+}

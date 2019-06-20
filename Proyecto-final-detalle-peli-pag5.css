@@ -1,4 +1,8 @@
 /* header y footer comienzo */
+.nav-item{
+  position: relative;
+  left: 60px;
+}
 div.uk-navbar-right{
   position: relative;
   bottom: 6px;
