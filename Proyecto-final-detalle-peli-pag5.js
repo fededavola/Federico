@@ -151,6 +151,11 @@ console.log("este es el id de la peli");
   console.log(id);
 
   var arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
+  // en caso que sea nulo, lo creo vacio
+  if (arrayDePelisFavoritas == null) {
+    arrayDePelisFavoritas = []
+  }
+
   console.log("este es el contenido del array en session");
   console.log(arrayDePelisFavoritas);
 
@@ -166,4 +171,8 @@ console.log("este es el id de la peli");
   }
 
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+}
+
+function mostrarRecomendaciones(){
+  document.querySelector("div.oculto").style.display = "block"
 }

@@ -2,7 +2,7 @@ window.addEventListener("load",function() {
 
 // TENGO QUE CHECKEAR SI ALGUIEN INICIO SESSION, CON QUE UN DATO ESTE< ME BASTA PARA SABERLO
 if (window.sessionStorage.getItem("nombre") != "" && window.sessionStorage.getItem("nombre") != null) {
-   alert("Bienvenido: "+   window.sessionStorage.getItem("nombre"))
+
   // CAPTURO EL TEXTO DE LOGIN Y LO REEMPLAZO POR EL NOMBRE DEL USUARIO
   document.querySelector('a.boton-login ').innerHTML = window.sessionStorage.getItem("nombre")
   var arrayDePelisFavoritas = []
@@ -25,7 +25,7 @@ if (window.sessionStorage.getItem("nombre") != "" && window.sessionStorage.getIt
       console.log(gender);
       window.sessionStorage.setItem("gender",gender)
       window.sessionStorage.getItem("gender")
-
+      alert("Bienvenido: "+   window.sessionStorage.getItem("nombre"))
   })
 
 })

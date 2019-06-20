@@ -20,7 +20,6 @@ button{
    top: 22px;
    border: none;
  }
-
 div.search {
   float: right;
   margin-top: 11px;
@@ -86,6 +85,14 @@ div.right-container-detallesDePelicula {
 div h5 {
   line-height: 0.8;
 }
-section.container-peliculas-recomendadas {
+.boton-de-recomendaciones{
+  position: relative;
+  top: 5px;
+  display: block;
+}
 
+
+/* OCULTO */
+div.oculto {
+  display: none;
 }
