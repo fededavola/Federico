@@ -13,12 +13,14 @@
 
 input{
   border-style: solid;
-  height: 25px;
   border-radius: 12px;
+  border-color: grey;
+  height: 25px;
 }
 select{
   border-style: solid;
-  height: 25px;
+  height: 31px;
+  width: 100px;
   border-radius: 12px;
-  border-color: black;
+  border-color: grey;
 }

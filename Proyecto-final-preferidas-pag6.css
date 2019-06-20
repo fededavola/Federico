@@ -15,6 +15,7 @@ button{
   position: relative;
   left: 88px;
   top: 20px;
+  cursor: pointer;
 }
  a.boton-login{
    position: relative;
@@ -42,10 +43,13 @@ img.class-TMDB {
 }
 footer div {
   float: left;
-  width: 30%;
+  width: 34%;
   color: springgreen;
   position: relative;
   top: 30px;
   text-align: center;
 }
 /* header y footer fin */
+ul{
+  list-style: none;
+}

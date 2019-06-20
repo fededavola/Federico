@@ -14,6 +14,7 @@ button{
   position: relative;
   left: 88px;
   top: 20px;
+  cursor: pointer;
 }
  a.boton-login{
    position: relative;
@@ -79,19 +80,32 @@ div.right-container-detallesDePelicula {
   width: 50%;
   margin-left: 15px;
 }
+p.titulo-pelis-home{
+  color: black;
+}
 #lista-pelicula-detalles {
   padding-left: 10px;
 }
 div h5 {
   line-height: 0.8;
 }
+button.estrella{
+  left: 5px;
+  top: -8px;
+  position: relative;
+}
 .boton-de-recomendaciones{
   position: relative;
-  top: 5px;
-  display: block;
+  top: -80px;
+  left: 460PX;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: #07c;
+  background-color: #147bcd;
+  color: white;
+  height: 33px;
+  border-width: 1px;
 }
-
-
 /* OCULTO */
 div.oculto {
   display: none;
