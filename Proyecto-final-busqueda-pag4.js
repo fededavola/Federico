@@ -4,7 +4,7 @@ var urlSearchParams = new URLSearchParams(window.location.search)
 var textoBuscado = urlSearchParams.get("buscador")
 console.log(textoBuscado);
 
-var url = "https://api.themoviedb.org/3/search/movie?api_key="+apiKey+"&query="+textoBuscado+"&page=1&include_adult=true"
+var url = "https://api.themoviedb.org/3/search/movie?api_key="+apiKey+"&query="+textoBuscado+"&page=1&include_adult=false"
 fetch(url)
   .then(function(respuesta) {
     return respuesta.json()
