@@ -74,3 +74,6 @@ p.titulo-pelis-home{
 li.uk-active h2{
   color: black;
 }
+.search-button {
+  width: 35px;
+}

@@ -116,3 +116,6 @@ button.estrella{
 div.oculto {
   display: none;
 }
+.search-button {
+  width: 35px;
+}

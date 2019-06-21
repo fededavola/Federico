@@ -60,3 +60,6 @@ ul{
 h2.titulo-de-la-pelicula {
   color: black;
 }
+.search-button {
+  width: 35px;
+}

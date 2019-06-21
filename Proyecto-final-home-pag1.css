@@ -124,3 +124,6 @@ div.pelis-proximos-estrenos img {
 @media screen { max-width
 
 }
+.search-button {
+  width: 35px;
+}

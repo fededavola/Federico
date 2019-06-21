@@ -54,3 +54,6 @@ footer div {
   text-align: center;
 }
 /* header y footer fin */
+.search-button {
+  width: 35px;
+}
