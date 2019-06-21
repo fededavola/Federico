@@ -146,10 +146,13 @@ console.log(image);
 
 //funcion para agregar a favoritos
 function agregarFavoritos(id){
-  alert("me clickearon!")
+//  alert("me clickearon!")
 console.log("este es el id de la peli");
   console.log(id);
-
+  if (window.sessionStorage.getItem("nombre") != null) {
+    function mostrarBotonDeFavoritos(){
+      document.querySelector("button.estrella").style.display = "block"
+  }
   var arrayDePelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
   // en caso que sea nulo, lo creo vacio
   if (arrayDePelisFavoritas == null) {
@@ -162,17 +165,19 @@ console.log("este es el id de la peli");
   // controlo si el ID de la peli clickeada esta como favorita
   if (arrayDePelisFavoritas.indexOf(id)==-1) {
     // la peli no esta, entonces la agrego
+    alert("agregado a favoritos")
     arrayDePelisFavoritas.push(id)
     window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   } else {
     // si esta la elimino
+    alert("eliminado de favoritos")
     arrayDePelisFavoritas.splice(arrayDePelisFavoritas.indexOf(id),1)
     window.sessionStorage.setItem("favorita",JSON.stringify(arrayDePelisFavoritas))
   }
 
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
 }
-
+}
 function mostrarRecomendaciones(){
   document.querySelector("div.oculto").style.display = "block"
 }
